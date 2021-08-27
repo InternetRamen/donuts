@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+.stroke-1 {
+  stroke: red;
+  stroke-dasharray: 252;
+  stroke-dashoffset: 252;
+}
+
+.added {
+  -webkit-animation: 1s fill linear forwards;
+          animation: 1s fill linear forwards;
+}
+
+svg {
+  fill: rgba(0, 0, 0, 0);
+  stroke-width: 10;
+  height: 200px;
+  width: 200px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+@-webkit-keyframes fill {
+  to {
+    stroke-dashoffset: var(--filled);
+  }
+}
+
+@keyframes fill {
+  to {
+    stroke-dashoffset: var(--filled);
+  }
+}
+/*# sourceMappingURL=index.css.map */

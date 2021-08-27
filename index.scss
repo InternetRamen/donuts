@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    min-height: 100%;
+}
+.stroke-1 {
+    stroke: red;
+    stroke-dasharray: 252;
+    stroke-dashoffset: 252;
+}
+.added {
+    animation: 1s fill linear forwards;
+}
+svg {
+    fill: rgba($color: #000000, $alpha: 0);
+    stroke-width: 10;
+    height: 200px;
+    width: 200px;
+    transform: rotate(-90deg);
+}
+@keyframes fill {
+    to {
+        
+        stroke-dashoffset: var(--filled);
+    }
+}
